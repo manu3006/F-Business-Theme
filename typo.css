@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+h1 {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 1.12;
+    letter-spacing: 0.5px;
+    color: #233D63;
+
+}
+h2 {
+    font-family: 'Overpass';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+     color: #233D63;
+     letter-spacing: 0.6px;
+}
+
+h3 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.06px;
+    color: #233D63;
+
+}
+h4{
+font-family: 'Overpass', sans-serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.6px;
+text-align: center;
+color: #233D63;
+}
+p{
+font-family: 'Overpass', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.06px;
+color: #233D63;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #233D63;
+}
+
+@media (max-width:767px) {
+    .content-wrapper {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0;
+        padding: 0px 20px;
+    }
+
+    h1 {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 1.12;
+        color: #233D63;
+        letter-spacing: 0.5px;
+    }
+    h2{
+        font-size: 42px;
+    }
+
+    
+
+    h3 {
+        font-size: 23px;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+
+    .module_one .banner_input input {
+        padding: 10px 99px 10px 9px;
+        border: 1px solid #FFBC48;
+        margin-bottom: 20px;
+    }
+
+    .module_one .hero_banner::before {
+       
+        display: none;
+
+    }
+
+    .module_one .hero_banner::after {
+       display: none;
+    }
+
+    .module_two .our_clints_joins {
+        padding: 13px 26px;
+    }
+.our_target_three-col {
+display: block;
+}
+.our_target_three-col .column-1{
+    margin-right: 0%;
+    margin-bottom: 20px;
+}
+.our_target_three-col .column-1 .more{
+    max-width: none;
+}
+.our_target_describe p {
+    font-size: 18px;
+}
+}
+/* tab view */
+@media (min-width:768px) and (max-width:1024px) {
+    .banner_heading h1 {
+        font-size: 54px;
+    }
+
+    .module_one .hero_banner::before {
+        content: none;
+        position: absolute;
+        z-index: 1;
+        background-image: none;
+       display: none;
+
+    }
+
+    .module_one .hero_banner::after {
+       content: none;
+       position: absolute;
+       z-index: 1;
+       background-image: none;
+      display:none ;
+    }
+
+    .module_two .our_clints_joins img {
+        padding: 0px 54px;
+    }
+
+}
