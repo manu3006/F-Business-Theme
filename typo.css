@@ -39,7 +39,7 @@ h1 {
 
 }
 h2 {
-    font-family: 'Overpass', sans-serif;
+   font-family: 'Overpass', sans-serif;
     font-weight: 500;
     font-size: 50px;
     line-height: 60px;
@@ -139,6 +139,12 @@ a {
     .module_one .banner_input button {
         max-width: none;
     }
+    .module_one .banner_input button {
+        padding: 15px 0px 15px;
+    }
+    .module_one .banner_input input {
+        padding: 15px 0px 20px 15px;
+    }
 
     .module_one::before {
         display: none;
@@ -175,9 +181,16 @@ display: block;
 .our_target_describe p {
     font-size: 18px;
 }
+.main_container {
+    padding: 56px 15px 45.53px 15px;
+}
+
 }
 /* tab view */
 @media (min-width:768px) and (max-width:1024px) {
+    h4{
+        font-size: 21px;
+    }
     .module_one {
         padding: 90px 0px 92px;
     }
@@ -206,19 +219,26 @@ display: block;
         padding: 0px 54px;
     }
     .our_target_three-col {
-        display: block;
+        display: flex;
         }
     .our_target_three-col .column-1{
         margin-bottom: 20px;
-        max-width: 344px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        max-width: none;
+        margin-left: none;
+        margin-right: none;
     }
     .our_target_three-col .column-1:nth-child(3n+3){
-        margin-right: auto;
+        margin-right: none;
     }
     .our_target_three-col .column-1 .more{
         max-width: none;
+    }
+    .main_container{
+        padding: 27px 10px 27px 10px;
+    }
+    .our_target_three-col .column-1 .more p {
+        padding-bottom: 60px;
     }
 
 }
