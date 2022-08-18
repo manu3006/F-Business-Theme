@@ -2,7 +2,7 @@
     padding: 177px 0px 92px
 }
 
-.module_one .hero_banner {
+.module_one {
     text-align: center;
     position: relative;
     z-index: 1;
@@ -26,6 +26,12 @@
     border: 1px solid #FFBC48;
     border-radius: 5px;
     margin-right: 1%;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #BABABA;
+    
 }
 
 
@@ -35,7 +41,7 @@
 }
 
 .module_one .banner_input button {
-    padding: 16px 0px 14px;
+    padding: 19px 0px 19px;
     width: 100%;
     max-width: 229px;
     background-color: #FFBC48;
@@ -57,23 +63,25 @@
     max-width: 1050px;
     width: 100%;
 }
-
-.module_one .hero_banner::before {
+.module_one{
+position: relative;
+z-index: 1;
+}
+.module_one::before {
     content: '';
     position: absolute;
     z-index: 1;
     background-image: url(./Group\ 686.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    max-width: 556.57px;
-    min-height: 571.93px;
-    left: -354px;
-    top: -121px;
+     width: 100%;
+    max-width: 403px;
+    min-height: 532px;
+    left: 0px;
+    top: 0;
+    transform: translate(0%, 19%);
 }
-
-
-.module_one .hero_banner::after {
+.module_one::after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -81,10 +89,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 556.57px;
-    min-height: 545.93px;
-    right: -374px;
-    top: 214px;
+    max-width: 441px;
+    min-height: 458px;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -30%);
 }
 
 /*  module two start */
@@ -189,7 +198,7 @@
 }
 
 .our_target_three-col .column-1 h4 {
-    margin-bottom: 25px;
+    padding-bottom: 32px;
 }
 
 .our_target_three-col .column-1 .more {
@@ -204,7 +213,7 @@
 }
 
 .our_target_three-col .column-1 .more p {
-    padding-bottom: 40px;
+    padding-bottom: 35px;
    
 }
 
