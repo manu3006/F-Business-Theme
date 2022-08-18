@@ -107,7 +107,7 @@ a {
         letter-spacing: 0.5px;
     }
     h2{
-        font-size: 42px;
+        font-size: 30px;
     }
 
     
@@ -121,9 +121,14 @@ a {
     }
 
     .module_one .banner_input input {
-        padding: 10px 99px 10px 9px;
-        border: 1px solid #FFBC48;
-        margin-bottom: 20px;
+      
+        margin-bottom: 5%;
+    }
+    
+
+    
+    .module_one .banner_input button {
+        padding: 10px 0px;
     }
 
     .module_one .hero_banner::before {
@@ -138,6 +143,9 @@ a {
 
     .module_two .our_clints_joins {
         padding: 13px 26px;
+    }
+    .module_two .our_clints_joins img{
+        padding: 0px 75px;
     }
 .our_target_three-col {
 display: block;
