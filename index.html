@@ -143,7 +143,7 @@
                     <div class="tabber-left">
                         <div class="mobile-view">
                             <h4>SEO Consulting
-                            <i class="fa fa-sort-desc"></i>
+                           
                            </h4>
                             </div>
                         <ul class="tabber-contents tabs">
@@ -342,6 +342,33 @@
         })
 
     })
+    let drpdown = function () {
+      if($(window).width() < 768){
+        // jquery for dropdown
+        $(function() {
+          var list = $('.tabs');
+          var link = $('.mobile-view');
+          link.click(function(e) {
+            e.preventDefault();
+            list.slideToggle(200);
+          });
+          list.find('li').click(function() {
+            var text = $(this).html();
+            // var icon = '<i class="fa fa-sort-desc"></i>';
+            link.html(text);
+            link.append(icon)
+            list.slideToggle(200);
+          });
+        });
+      }
+    }
+    $(window).resize(function() {
+      if($(window).width() < 768){
+        drpdown();
+        location.reload()
+      }
+    });
+    drpdown();
 </script>
 
 </html>

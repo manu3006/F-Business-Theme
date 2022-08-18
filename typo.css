@@ -125,7 +125,7 @@ ul li {
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 31px;
     }
 
 
@@ -220,15 +220,25 @@ ul li {
     .main_tabber {
         display: block;
     }
+    .main_tabber .tabber-left ul li {
+        width: 100%;
+        max-width: 460px;
+        padding: 16px 0px 17px;
+        margin-top: 10px;
+        border-radius: 0px;
+    
+    }
+
     .mobile-view {
         display: block;
         border: 1px solid #FFBC48;
         text-align: center;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 600;
         position: relative;
         color: #695ff7;
         z-index: 1;
+        padding: 20px 0px
 
     }
     .tabber-contents .tabs li {
