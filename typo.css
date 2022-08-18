@@ -39,7 +39,7 @@ h1 {
 
 }
 h2 {
-    font-family: 'Overpass';
+    font-family: 'Overpass', sans-serif;
     font-weight: 500;
     font-size: 50px;
     line-height: 60px;
@@ -119,25 +119,32 @@ a {
     h5 {
         font-size: 19px;
     }
+    .module_one {
+        padding: 90px 0px 92px;
+    }
 
     .module_one .banner_input input {
       
-        margin-bottom: 5%;
+        margin-bottom: 3%;
+    }
+    .module_one .banner_heading{
+        padding-bottom: 39px;
     }
     
+    .module_one .banner_input input{
+        max-width: none;
+    }
 
     
     .module_one .banner_input button {
-        padding: 10px 0px;
+        max-width: none;
     }
 
-    .module_one .hero_banner::before {
-       
+    .module_one::before {
         display: none;
-
     }
 
-    .module_one .hero_banner::after {
+    .module_one::after {
        display: none;
     }
 
@@ -147,12 +154,20 @@ a {
     .module_two .our_clints_joins img{
         padding: 0px 75px;
     }
+    .module_three{
+        padding: 23px 0px;
+    }
 .our_target_three-col {
 display: block;
 }
 .our_target_three-col .column-1{
-    margin-right: 0%;
     margin-bottom: 20px;
+    max-width: 344px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our_target_three-col .column-1:nth-child(3n+3){
+    margin-right: auto;
 }
 .our_target_three-col .column-1 .more{
     max-width: none;
@@ -163,11 +178,14 @@ display: block;
 }
 /* tab view */
 @media (min-width:768px) and (max-width:1024px) {
+    .module_one {
+        padding: 90px 0px 92px;
+    }
     .banner_heading h1 {
         font-size: 54px;
     }
 
-    .module_one .hero_banner::before {
+    .module_one::before {
         content: none;
         position: absolute;
         z-index: 1;
@@ -176,7 +194,7 @@ display: block;
 
     }
 
-    .module_one .hero_banner::after {
+    .module_one::after {
        content: none;
        position: absolute;
        z-index: 1;
@@ -186,6 +204,21 @@ display: block;
 
     .module_two .our_clints_joins img {
         padding: 0px 54px;
+    }
+    .our_target_three-col {
+        display: block;
+        }
+    .our_target_three-col .column-1{
+        margin-bottom: 20px;
+        max-width: 344px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .our_target_three-col .column-1:nth-child(3n+3){
+        margin-right: auto;
+    }
+    .our_target_three-col .column-1 .more{
+        max-width: none;
     }
 
 }
