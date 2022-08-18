@@ -31,7 +31,7 @@
     font-size: 16px;
     line-height: 28px;
     color: #BABABA;
-    
+
 }
 
 
@@ -63,10 +63,12 @@
     max-width: 1050px;
     width: 100%;
 }
-.module_one{
-position: relative;
-z-index: 1;
+
+.module_one {
+    position: relative;
+    z-index: 1;
 }
+
 .module_one::before {
     content: '';
     position: absolute;
@@ -74,13 +76,14 @@ z-index: 1;
     background-image: url(./Group\ 686.svg);
     background-size: cover;
     background-repeat: no-repeat;
-     width: 100%;
+    width: 100%;
     max-width: 403px;
     min-height: 532px;
     left: 0px;
     top: 0;
     transform: translate(0%, 19%);
 }
+
 .module_one::after {
     content: '';
     position: absolute;
@@ -107,8 +110,6 @@ z-index: 1;
     border: 1px solid #FFBC48;
     margin-top: 51px;
     padding: 38px 0px
-
-
 }
 
 .module_two .our_clints_joins img {
@@ -166,7 +167,7 @@ z-index: 1;
     flex-basis: 46%;
     border: 1px solid #FFBC48;
     margin-right: 4%;
-    box-shadow:  0px 0px  4px gray;
+    box-shadow: 0px 0px 4px gray;
     position: relative;
     z-index: 1;
 }
@@ -179,22 +180,25 @@ z-index: 1;
     width: 100%;
     max-width: 82.74px;
     margin: 0 auto;
-   
-   
-   
+
+
+
 }
-.our_target_three-col .column-1 .main_container .container-image2 img{
+
+.our_target_three-col .column-1 .main_container .container-image2 img {
     width: 100%;
     max-width: 106.43px;
     margin: 0 auto;
-   
+
 }
-.our_target_three-col .column-1 .main_container .container-image3 img{
+
+.our_target_three-col .column-1 .main_container .container-image3 img {
     width: 100%;
     max-width: 76px;
     margin: 0 auto;
-   
+
 }
+
 .main_container {
     padding: 59px 45px 45.53px 45px;
 }
@@ -202,34 +206,159 @@ z-index: 1;
 .our_target_three-col .column-1 h4 {
     padding-bottom: 32px;
 }
-.our_target_three-col .column-1 .main_container a{
+
+.our_target_three-col .column-1 .main_container a {
     position: absolute;
     z-index: 1;
     bottom: 25px;
     left: 50%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .our_target_three-col .column-1 .more {
-   
+
     width: 100%;
     padding-top: 10px;
-   
- 
-   
+
+
+
 
 
 }
 
 .our_target_three-col .column-1 .more p {
     padding-bottom: 35px;
-   
+
 }
 
-.our_target_three-col .column-1 .more span a{
+.our_target_three-col .column-1 .more span a {
     color: #FFBC48;
 }
+
 .our_target_three-col .column-1 .more a i {
     margin-left: 6px;
-   
+
+}
+
+/* module three end */
+
+
+/* module foure start tabber */
+.module_foure {
+    padding: 100px 0px;
+}
+
+.module_foure .tabber-heading {
+    width: 100%;
+    max-width: 742px;
+    margin: 0 auto;
+}
+
+.module_foure .tabber-heading span {
+    font-weight: 900;
+}
+
+.tabber-heading h2 {
+    padding-bottom: 10px;
+}
+
+.tabber-heading p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05px;
+    color: #233D63;
+}
+
+.tabber-heading {
+    padding-bottom: 96px;
+}
+
+.main_tabber .tabber-left ul li {
+    width: 100%;
+    max-width: 272px;
+    padding: 16px 0px 17px;
+    border: 1px solid #FFBC48;
+    margin-bottom: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main_tabber .tabber-left ul li {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #233D63;
+}
+.tabber-left ul .active{
+    background-color: #FFBC48;
+}
+ .main_tabber {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.tabber-left {
+    flex-basis: 50%;
+}
+
+.tabber-right {
+    flex-basis: 90%;
+  
+}
+
+.tabber-right .tabber-image img {
+    width: 100%;
+    max-width: 482px;
+    display: block;
+    box-shadow: 0px 0px 25px gray;
+}
+.tabber-right.tabber-button a {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFBC48;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+
+}
+
+.tabber-right .tabber-button a:hover {
+    color: #d2a62c;
+}
+
+.tabber-right .tabber-button .fa {
+    color: #ffcc3e;
+}
+
+.tabber-right .content-explain h5 {
+  
+    text-align: left;
+    padding: 74px 0px 35px;
+}
+.tabber-right .content-explain p {
+padding-bottom: 30px;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #30496D;
+text-align: left;
+}
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
