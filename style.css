@@ -1,5 +1,5 @@
 .module_one {
-    padding: 100px 0px;
+    padding: 177px 0px 92px
 }
 
 .module_one .hero_banner {
@@ -16,23 +16,34 @@
 .module_one .banner_heading {
     max-width: 902px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    padding-bottom: 73px;
 }
 
 .module_one .banner_input input {
-    padding: 10px 109px 10px 9px;
+    padding: 21px 0px 20px 15px;
+    width: 100%;
+    max-width: 390px;
     border: 1px solid #FFBC48;
+    border-radius: 5px;
+    margin-right: 1%;
 }
 
+
+
 .banner_input {
-    margin-bottom: 36px;
+    margin-bottom: 80px;
 }
 
 .module_one .banner_input button {
-    padding: 5px 50px 5px 50px;
+    padding: 16px 0px 14px;
+    width: 100%;
+    max-width: 229px;
     background-color: #FFBC48;
     border: 1px solid #FFBC48;
+    border-radius: 5px;
 }
+
+
 
 .module_one .banner_input button a {
     font-family: 'Overpass', sans-serif;
@@ -54,11 +65,13 @@
     background-image: url(./Group\ 686.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 556.57px;
+    width: 100%;
+    max-width: 556.57px;
     min-height: 571.93px;
-    left: -406px;
-    top: -86px;
+    left: -354px;
+    top: -121px;
 }
+
 
 .module_one .hero_banner::after {
     content: '';
@@ -67,10 +80,11 @@
     background-image: url(./Group\ 665.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 556.57px;
-    min-height: 541.93px;
-    right: -381px;
-    top: 156px;
+    width: 100%;
+    max-width: 556.57px;
+    min-height: 545.93px;
+    right: -374px;
+    top: 214px;
 }
 
 /*  module two start */
@@ -83,7 +97,7 @@
 .module_two .our_clints_joins {
     border: 1px solid #FFBC48;
     margin-top: 51px;
-    padding: 20px 0px;
+    padding: 38px 0px
 
 
 }
@@ -100,7 +114,7 @@
 
 /*  module three start */
 .module_three {
-    padding: 100px 0px;
+    padding: 85px 0px;
 }
 
 .our_target {
@@ -136,7 +150,7 @@
 }
 
 .our_target_three-col {
-    padding: 66px 0px 0px;
+    padding: 62px 0px 0px;
 }
 
 .our_target_three-col .column-1 {
@@ -150,12 +164,24 @@
     margin-right: 0%;
 }
 
-.our_target_three-col .column-1 img {
-    max-width: 84px;
+.our_target_three-col .column-1 .main_container .container-image1 img {
     width: 100%;
+    max-width: 82.74px;
     margin: 0 auto;
-    min-height: 112.8px;
-    margin-bottom: 10px;
+   
+   
+   
+}
+.our_target_three-col .column-1 .main_container .container-image2 img{
+    width: 100%;
+    max-width: 106.43px;
+    margin: 0 auto;
+   
+}
+.our_target_three-col .column-1 .main_container .container-image3 img{
+    width: 100%;
+    max-width: 76px;
+    margin: 0 auto;
    
 }
 .main_container {
@@ -167,9 +193,10 @@
 }
 
 .our_target_three-col .column-1 .more {
-    max-width: 263px;
+   
     width: 100%;
-    min-height: 172.47px;
+    padding-top: 10px;
+   
  
    
 
