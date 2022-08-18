@@ -214,10 +214,82 @@ ul li {
     .main_container {
         padding: 56px 15px 45.53px 15px;
     }
+    .module_foure {
+        padding: 38px 0px;
+    }
+    .main_tabber {
+        display: block;
+    }
+    .mobile-view {
+        display: block;
+        border: 1px solid #FFBC48;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        color: #695ff7;
+        z-index: 1;
+
+    }
+    .tabber-contents .tabs li {
+        /* margin-right: 50px; */
+          right: 10px;
+          font-weight: 900;
+          font-size: 15px;
+          color: #695ff7;
+  
+      }
+      .tabber-contents {
+        border: 1px solid #FFBC48 ;
+    }
+    .tabber-heading {
+        padding-bottom: 39px;
+    }
+    .tabber-contents li {
+        font-size: 16px;
+        line-height: 1.2;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        padding-left: 0px;
+        padding-top: 10px;
+
+
+    }
+    .main_tabber .tabber-contents li.active {
+        color: #695ff7;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .tabber-contents li:hover {
+        color: #695ff7;
+
+    }
+    .main_tabber .tabber-contents li.active {
+        color: #695ff7;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .tabber-image img {
+        margin-top: 20px;
+    }
+    .tabber-right {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    ul.tabber-contents.tabs {
+        display: none;
+    }
+
 
 }
 
 /* tab view */
+
 @media (min-width:768px) and (max-width:1024px) {
     h4 {
         font-size: 21px;

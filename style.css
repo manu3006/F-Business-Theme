@@ -317,7 +317,7 @@
     width: 100%;
     max-width: 482px;
     display: block;
-    box-shadow: 0px 0px 25px gray;
+    /* box-shadow: 0px 0px 25px gray; */
 }
 .tabber-right.tabber-button a {
     font-family: 'Overpass', sans-serif;
@@ -361,4 +361,22 @@ text-align: left;
 
 .tab-content.active {
     display: block;
+}
+.mobile-view h4 i{
+    content: '';
+        
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #695ff7;
+}
+.mobile-view h4{
+    color: #233D63;
+}
+
+
+.mobile-view {
+    display: none;
 }
