@@ -125,7 +125,12 @@ ul li {
     }
 
     h2 {
-        font-size: 31px;
+        font-size: 24px;
+        line-height: 37px;
+    }
+    .business_plan_heading h2{
+        font-size: 30px;
+        line-height: 38px;
     }
 
 
@@ -139,7 +144,7 @@ ul li {
     }
 
     .module_one {
-        padding: 90px 0px 92px;
+        padding: 38px 0px 38px;
     }
 
     .module_one .banner_input input {
@@ -222,11 +227,20 @@ ul li {
     }
     .main_tabber .tabber-left ul li {
         width: 100%;
-        max-width: 460px;
+        max-width: none;
         padding: 16px 0px 17px;
         margin-top: 10px;
         border-radius: 0px;
     
+    }
+    .tabber-right .tabber-image img{
+        max-width: none;
+    }
+    .main_tabber .tabber-left ul li{
+        font-size: 22px;
+    }
+    .main_tabber .tabber-left ul li{
+        border: none;
     }
 
     .mobile-view {
@@ -294,9 +308,39 @@ ul li {
     ul.tabber-contents.tabs {
         display: none;
     }
-
+    .business_plan_three-col{
+        display: block;
+    }
+    .business_plan_three-col .user_col-1 {
+        flex-basis: 100%;
+       
+        margin-bottom: 20px;
+    }
+    .business_plan_three-col .user_col-1{
+     
+        max-width: 400px;
+       margin: 0 auto;
+       margin-bottom: 20px;
+     
+    }
+    .business_plan_three-col .user_col-1:nth-child(3n+3) {
+       margin: 0 auto;
+    }
+    .business_plan_three-col .user_col-1 .main_container .btn{
+        padding: 13px 0px;
+    }
+    .business_plan_heading{
+        padding-bottom: 42px;
+    }
+    .business_plan_three-col .user_col-1 .main_container h5{
+        font-size: 50px;
+    }
+    .business_plan_three-col .user_col-1 .main_container .user_col-1_describe p {
+        line-height: 30px;
+    }
 
 }
+
 
 /* tab view */
 
@@ -311,6 +355,15 @@ ul li {
 
     .banner_heading h1 {
         font-size: 54px;
+    }
+    .module_one .banner_heading{
+        padding-bottom: 40px;
+    }
+    .module_three {
+        padding: 20px 0px;
+    }
+    .module_foure {
+        padding: 63px 0px;
     }
 
     .module_one::before {
@@ -341,7 +394,6 @@ ul li {
     .our_target_three-col .column-1 {
         margin-bottom: 20px;
         width: 100%;
-        max-width: none;
         margin-left: none;
         margin-right: none;
     }
@@ -361,5 +413,16 @@ ul li {
     .our_target_three-col .column-1 .more p {
         padding-bottom: 60px;
     }
+    
+
+.business_plan_three-col .user_col-1 .main_container .btn{
+    padding: 13px 0px;
+}
+.tabber-right {
+    flex-basis: 100%;
+}
+.tabber-left{
+    flex-basis: 100%;  
+}
 
 }
