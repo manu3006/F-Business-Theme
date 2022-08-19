@@ -432,9 +432,10 @@
 
 .business_plan_three-col .user_col-1 {
     flex-basis: 31%;
-    border: 1px solid #ffcc3e;
+    border: 0.5px solid rgba(255, 188, 72, 0.8);
     margin-right: 3.444%;
     text-align: center;
+    background: #FFFFFF;
     border-radius: 4px;
     /* transition: transform 5s,  3s ease-in-out; */
 }
@@ -557,11 +558,73 @@
 .module_six {
     padding: 100px 0px;
     background-color: #FBFBFB;
+    position: relative;
+    z-index: 1;
 }
 
 .clints_quote {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
+.clints-images::before{
+    content: '';
+    background-image: url(./Mask\ Group\ \(5\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 123px;
+    min-height: 141px;
+    position: absolute;
+    z-index: -1;
+    top: 22%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    /* transform: skew(2deg,19deg); */
+}
+.clints-images::after{
+    content: '';
+    background-image: url(./Mask\ Group\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 123px;
+    min-height: 141px;
+    position: absolute;
+    z-index: -1;
+    top: 21%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+}
+.clints-images1::before{
+    content: '';
+    background-image: url(./Mask\ Group\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    z-index: -1;
+    bottom:21%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.clints-images1::after{
+    content: '';
+    background-image: url(./Mask\ Group\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    z-index: -1;
+    bottom: 18%;
+    right: 16%;
+    transform: translate(-50%, -50%);
+}
+
 
 .clints_describe {
     width: 100%;
