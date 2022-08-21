@@ -330,8 +330,11 @@ ul li {
     .business_plan_three-col .user_col-1:nth-child(3n+3) {
        margin: 0 auto;
     }
+    .business_plan_three-col .user_col-1 .main_container{
+        padding: 20px;
+    }
     .business_plan_three-col .user_col-1 .main_container .btn{
-        padding: 13px 35px;
+        padding: 10px 30px;
     }
     .business_plan_heading{
         padding-bottom: 42px;
@@ -342,8 +345,83 @@ ul li {
     .business_plan_three-col .user_col-1 .main_container .user_col-1_describe p {
         line-height: 30px;
     }
+    .clints_describe p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .clints_quote img {
+        max-width: 69px;
+        width: 100%;
+    }
+
+
+.clints-images::before {
+    content: '';
+    background-image: url(./Mask\ Group\ \(5\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 112px;
+    min-height: 129px;
+    position: absolute;
+    z-index: -2;
+    top: 26%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    /* transform: skew(2deg,19deg); */
+}
+.clints-images::after {
+    content: '';
+    background-image: url(./Mask\ Group\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 116px;
+    min-height: 132px;
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: -18%;
+    transform: translate(-50%, -50%);
+}
+.clints-images1::after {
+    content: '';
+    background-image: url(./Mask\ Group\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    z-index: -1;
+    bottom: 15%;
+    right: -12%;
+    transform: translate(-50%, -50%);
+}
+.clints-images1::before {
+    content: '';
+    background-image: url(./Mask\ Group\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 78px;
+    min-height: 85px;
+    position: absolute;
+    z-index: -1;
+    bottom: 16%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
 
 }
+
+
+
+
+
+
+
+
 
 
 /* tab view */
