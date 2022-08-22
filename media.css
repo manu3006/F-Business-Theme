@@ -274,6 +274,16 @@
         font-size: 19px;
         line-height: 35px;
     }
+    .clints_describe{
+        max-width: none;
+        padding: 25px;
+    }
+    .our_clints_name h5{
+        font-size: 15px;
+    }
+    .our_clints_name p{
+        font-size: 12px;
+    }
 
     .clints_quote img {
         max-width: 69px;
