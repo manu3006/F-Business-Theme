@@ -315,6 +315,26 @@
     .module_six::after{
         display: none;
     }
+    .module_eight .our_posts_three-colums{
+        display: block;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1{
+        flex-basis: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1 .main-container2{
+        padding: 20px;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1:nth-child(3n+3){
+        margin: auto;
+    }
+    .module_eight .posts_heading h2{
+        font-size: 41px;
+        line-height: 46px;
+    }
+   
 
 }
 @media (max-width:320px){
@@ -524,6 +544,20 @@
     }
     .clints_describe{
         max-width: 692px;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1 .main-container2{
+        padding: 20px;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1 .posts_colum1_book h5{
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1 .posts_colum1_book {
+        padding-top: 20px;
+        padding-bottom: 17px;
+    }
+    .module_eight .our_posts_three-colums .posts_colum1 .main-container2 h6{
+        padding-bottom: 16px;
     }
 
 }
