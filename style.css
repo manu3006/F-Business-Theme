@@ -864,4 +864,25 @@ width:100%;
     background-color: #ee9e14;
 }
   
+/* module eghit end */
 
+/* module seven start */
+.module_seven{
+    padding: 100px 0px;
+  
+}
+.test_cases_heading{
+   width: 100%;
+   max-width: 388px;
+   text-align: center;
+   padding-bottom: 40px;
+}
+
+
+.test_cases_images{
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+}
