@@ -895,64 +895,60 @@ width:100%;
     flex-direction: row;
 }
 
-ul.slick-dots {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    list-style-type: circle;
-    color: #C4C4C4;
-    margin-top: 20px;
-}
 
 .test_case_col {
-    /* border: 1px solid #FFBC48; */
-    margin-right: 1%;
-    background: #FBFBFB;
-    border: 1px solid rgba(41, 57, 87, 0.2);
+    flex-basis: 33%;
 }
 
 .test_case_col img {
     display: inline-block;
     width: 100%;
-    max-width: 438px;
+    max-width: 350px;
     min-height: 352px;
 }
 
-ul.slick-dots li button {
-    border: 1px solid #CACED1;
-    margin: 5px;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    background-color: transparent;
-    transition: all .5s ease-in-out;
-    font-size: 0;
+ul.slick-dots {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    list-style-type: circle !important;
+    font-size: 24px;
+    letter-spacing: 31px;
+    gap: 26px;
+    color: #e4e1da;
+    margin-top: 70px;
+    
 }
+ul.slick-dots li
+{
+ list-style: disc;
+ font-size: 26px;
+ cursor: pointer;
+}
+
 
 li.slick-active {
-    color: #ee9e14;
-
-
+color: #e70c0c;
+font-size: 28px !important;
 }
-
-ul li button {
-    display: block;
-}
-
-ul li {
-    list-style-type: none;
+ul li button{
+    display: none;
 }
 
 .test_case_col-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
-    padding: 20px 0px;
+}
+.test_case_col-content{
+    padding: 20px 18px;
+    border: 1px solid #ee9e14;
+    margin-right: 27px;
 }
 
 .test_case_col-content h6 {
@@ -973,7 +969,7 @@ ul li {
 
 .test_case_col-content a i {
     vertical-align: middle;
-    margin-left: 1px;
+    /* margin-left: 1px; */
 }
 
 /* module seven end */
@@ -1186,7 +1182,6 @@ ul li {
     background-color: #FFBC48;
     display: inline-block;
 }
-
 
 
 
