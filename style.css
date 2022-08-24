@@ -837,10 +837,10 @@ width:100%;
 .module_eight .our_posts_three-colums .posts_colum1 .main-container2 a {
     color: #FFBC48;
     /* position: absolute;
-    z-index: 1;
-    bottom: 25px;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+z-index: 1;
+bottom: 25px;
+left: 50%;
+transform: translate(-50%, -50%); */
 }
 
 .module_eight .our_posts_three-colums .posts_colum1 .main-container2 a:hover {
@@ -876,7 +876,7 @@ width:100%;
 
 /* module seven start */
 .module-seven {
-    padding: 100px 0px 120px;
+    padding: 20px 0px 120px;
 
 }
 
@@ -884,6 +884,22 @@ width:100%;
 
     text-align: center;
     padding-bottom: 40px;
+    width: 100%;
+    max-width: 572px;
+    margin: 0 auto;
+}
+
+.test_cases_heading h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #233D63;
+}
+
+.test_cases_heading span {
+    font-weight: 800;
 }
 
 
@@ -893,61 +909,26 @@ width:100%;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+
+
 }
-
-
-.test_case_col {
-    flex-basis: 33%;
-}
-
 .test_case_col img {
     display: inline-block;
     width: 100%;
     max-width: 350px;
     min-height: 352px;
+  
 }
-
-ul.slick-dots {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    list-style-type: circle !important;
-    font-size: 24px;
-    letter-spacing: 31px;
-    gap: 26px;
-    color: #e4e1da;
-    margin-top: 70px;
-    
-}
-ul.slick-dots li
-{
- list-style: disc;
- font-size: 26px;
- cursor: pointer;
-}
-
-
-li.slick-active {
-color: #e70c0c;
-font-size: 28px !important;
-}
-ul li button{
-    display: none;
-}
-
 .test_case_col-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
 }
-.test_case_col-content{
+
+.test_case_col-content {
     padding: 20px 18px;
-    border: 1px solid #ee9e14;
+    background-color: #FBFBFB;
     margin-right: 27px;
 }
 
@@ -969,8 +950,43 @@ ul li button{
 
 .test_case_col-content a i {
     vertical-align: middle;
-    /* margin-left: 1px; */
+    margin-left: 5px;
 }
+
+ul.slick-dots {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    list-style-type: circle !important;
+    font-size: 24px;
+    letter-spacing: 31px;
+    gap: 26px;
+    color: #e4e1da;
+    margin-top: 70px;
+
+}
+
+ul.slick-dots li {
+    list-style: disc;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+li.slick-active {
+    color: #e70c0c;
+    font-size: 28px !important;
+}
+
+ul li button {
+    display: none;
+}
+
+
 
 /* module seven end */
 
@@ -987,7 +1003,7 @@ ul li button{
     position: absolute;
     z-index: -1;
     top: 0;
-    bottom: 0;
+    bottom: 143px;
     right: 0;
     left: 0;
     background-color: #FBFBFB;
@@ -1080,14 +1096,16 @@ ul li button{
 
 /* module ten start */
 .module_ten {
-    padding: 100px 0px;
+    padding: 100px 0px 127px;
 
 }
-.content-wrapper-big{
+
+.content-wrapper-big {
     max-width: 1373px;
     padding: 0px 20px;
     margin: 0 auto;
 }
+
 .message-heading h2 {
     font-family: 'Overpass';
     font-style: normal;
@@ -1101,12 +1119,12 @@ ul li button{
 }
 
 .message-heading span {
-   
+
     font-weight: 900;
-    
+
 }
 
-.message-heading{
+.message-heading {
     padding-bottom: 66px;
 }
 
@@ -1124,6 +1142,7 @@ ul li button{
     border-radius: 4px;
     margin-bottom: 33px;
     opacity: 0.5;
+    outline: #000;
 }
 
 .right-col label {
@@ -1140,7 +1159,7 @@ ul li button{
 }
 
 .message-flex .right-col {
-  flex-basis: 36%;
+    flex-basis: 36%;
 }
 
 .message-flex .left-col img {
@@ -1161,6 +1180,17 @@ ul li button{
     border-radius: 4px;
     margin-bottom: 23px;
     opacity: 0.5;
+    outline: #000;
+    text-align: start;
+}
+.message-flex input[type="email"] {
+    width: 100%;
+    padding: 16px 15px 16px 15px;
+    border: 2px solid #FFBC48CC;
+    border-radius: 4px;
+    margin-bottom: 33px;
+    opacity: 0.5;
+    outline: #000;
 }
 
 
@@ -1169,7 +1199,8 @@ ul li button{
     width: 100%;
     display: block;
 }
-.right-col .button{
+
+.right-col .button {
     font-family: 'Overpass';
     font-weight: 600;
     font-size: 16px;
@@ -1181,12 +1212,244 @@ ul li button{
     color: #ffffff;
     background-color: #FFBC48;
     display: inline-block;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+
+.right-col .button a {
+    color: #ffffff;
+}
+
+.right-col .button:hover {
+    background-color: #ee9e14;
+}
+
+/* module ten ends */
+
+/* module eleven start */
+.module_eleven {
+    padding: 80px 0px 30px;
+    background-color: #FBFBFB;
+}
+
+.module_eleven .news_letter {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+.module_eleven .news_letter .news_letter_heading h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #233D63;
+}
+
+.module_eleven .news_letter .news_letter_heading span {
+    font-weight: 900;
+}
+
+.module_eleven .news_letter .news_letter_heading p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #233D63;
+    padding-bottom: 38px;
+    padding-top: 10px
+}
+
+.module_eleven .news_letter .our_subscribes form {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 30px;
+
 }
 
 
+.module_eleven .news_letter .our_subscribes .right_col_type {
 
+    border: 2px solid #CECECE;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding: 30px 0px 30px 30px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    outline: #000;
+    width: 100%;
 
+}
 
+input.secondary-button {
+    position: absolute;
+    z-index: 2;
+    top: 11%;
+    left: 62.5%
+}
 
+.secondary-button {
 
+    padding: 14px 52px 14px 53px;
+    background-color: transparent;
+    border: 1px solid #FFBC48;
+    border-radius: 4px;
+    transition: 0.3s all ease-in-out;
+    background-color: #FFBC48;
+    display: inline-block;
+}
 
+.secondary-button:hover {
+    background-color: #ffff;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+.secondary-button:hover {
+    color: #000000;
+    transition: 0.3s all ease-in-out;
+}
+
+.secondary-button {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* module elven end */
+
+/* module twelve start */
+.module_twelve {
+    padding: 83px 0px 30px;
+}
+
+.footer_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.footer_section .footer_left_col {
+    flex-basis: 50%;
+}
+
+.footer_section .footer_right_col {
+    flex-basis: 50%;
+}
+
+.footer_left_col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.footer_left_col .footer_logo {
+    flex-basis: 50%;
+}
+
+.footer_left_col .footer_about {
+    flex-basis: 50%;
+}
+
+.footer_left_col .footer_about h5 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #233D63;
+    padding-bottom: 10px;
+}
+
+.footer_left_col .footer_about p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #233D63;
+    text-align: left;
+
+}
+
+.footer_right_col ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer_right_col ul li {
+    padding-left: 38px;
+}
+
+.footer_right_col ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #233D63;
+}
+
+.footer_right_col ul li a:hover {
+    color: #ee9e14;
+    transition: 0.3s all ease-in-out;
+}
+
+.module_last {
+    padding: 20px 0px;
+}
+
+.footer_aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer_aside .footer_left {
+    flex-basis: 28%;
+}
+
+.footer_aside .footer_right {
+    flex-basis: 72%;
+}
+
+.footer_right ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footer_right ul li {
+    padding-right: 50px;
+}
+
+.footer_right ul li a i {
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s all ease-in-out;
+
+}
+
+.footer_right ul li a i:hover {
+    color: #ef0bbd;
+
+}

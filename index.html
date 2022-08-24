@@ -172,7 +172,7 @@
 
                             </h4>
                         </div>
-                        <ul class="tabber-contents tabs">
+                        <ul class="tabber-contents tabs" style="display: block;">
                             <li class="active" data-tab="tab-1">SEO Consulting</li>
                             <li data-tab="tab-2">Email Optimized </li>
                             <li data-tab="tab-3">Distributors</li>
@@ -510,7 +510,7 @@
         <div class="content-wrapper">
             <div class="test_cases">
                 <div class="test_cases_heading">
-                    <h2>Wanna Know more? Check out our Test cases</h2>
+                    <h2>Wanna Know more? Check out our <span>Test cases</span></h2>
                 </div>
                 <div class="test_cases_images">
                     <div class="test_case_col">
@@ -521,16 +521,16 @@
                         </div>
                     </div>
                     <div class="test_case_col">
-                        <img src="./Mask Group (8).png" alt="">
+                        <img src="./nikita-kachanovsky-bLY5JqP_Ldw-unsplash 1.png" alt="">
                         <div class="test_case_col-content">
-                            <h6>Media Connect</h6>
+                            <h6>Advertising 101</h6>
                             <a href="">Lear more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="test_case_col">
                         <img src="./manu.png" alt="">
                         <div class="test_case_col-content">
-                            <h6>Media Connect</h6>
+                            <h6>Marketing Idea</h6>
                             <a href="">Lear more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -597,7 +597,7 @@
             <div class="know-more">
                 <div class="message-heading">
                     <h2>Want to know more ? Don’t wait ping a <span>message today.</span> </h2>
-                   
+
                 </div>
 
                 <div class="message_two-col">
@@ -608,12 +608,12 @@
                         <div class="right-col">
                             <form action="#">
                                 <label for="">Your Name</label>
-                                <input type="text"required>
+                                <input type="text"  required>
                                 <label for="">Your Email</label>
-                                <input type="text" required>
+                                <input type="email"  required>
                                 <label for="">Your Message</label>
-                                <input type="message" required>
-                                <button type="submit" class="button">Send Message</button>
+                                <input type="message"   required>
+                                <input type="submit" class="button" value="Submit">
                             </form>
                         </div>
                     </div>
@@ -621,10 +621,74 @@
             </div>
         </div>
     </section>
+    <!-- module ten end -->
+    <!-- module start end -->
+
+    <section class="module_eleven">
+        <div class="content-wrapper">
+            <div class="news_letter">
+                <div class="news_letter_heading">
+                    <h2>Get Daily updates Subscribe to <span> our newletter</span></h2>
+                    <p>Get daily news and updates from us, subscribe today.</p>
+                </div>
+                <div class="our_subscribes">
+                    <form action="#">
+                    <input type="email" class="right_col_type"  placeholder="Email Adders" required>
+                    <input type="submit" class="secondary-button" value="Subscribe Now">
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- module elven end -->
 
 
-
-
+ <!-- module twelve end -->
+ <section class="module_twelve">
+    <div class="content-wrapper">
+        <div class="footer_section">
+            <div class="footer_left_col">
+                <div class="footer_logo">
+                    <img src="./LOGO.png" alt="">
+                 </div>
+                <div class="footer_about">
+                    <h5>About us</h5>
+                    <p>Making any business reach to it’s full potenial by our expert solutions and advice trending with today’s market.</p>
+                   
+                </div>
+            </div>
+             <div class="footer_right_col">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Carrers</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+             </div>
+          
+        </div>
+    </div>
+ </section>
+ <!-- mosule twelve  end-->
+         <section class="module_last">
+            <div class="content-wrapper">
+                <div class="footer_aside">
+                    <div class="footer_left">
+                        <p>Copyright © wowdesign All Right Reserved</p>
+                    </div>
+                    <div class="footer_right">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-pinterest-p"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </section>
+ 
 
 
 
@@ -639,6 +703,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+<script src="./app.js"></script>
 <script>
     $('.slick-images').slick({
         dots: false,
@@ -770,47 +835,47 @@
     });
 </script>
 <script>
-$(".test_cases_images").slick({
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 1000,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  variableWidth: false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+    $(".test_cases_images").slick({
+        dots: true,
+        arrows: false,
         infinite: true,
-        dots: true,
-        variableWidth: false,
-      },
-    },
-    {
-      breakpoint: 651,
-      settings: {
-        slidesToShow: 1,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
         variableWidth: false,
-        slidesToShow: 1,
-        dots: true,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                    variableWidth: false,
+                },
+            },
+            {
+                breakpoint: 651,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    dots: true,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
 
 </script>
 
-</html>s
+</html>
