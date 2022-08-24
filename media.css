@@ -482,7 +482,7 @@
     
     .footer_section .footer_right_col {
         flex-basis: 100%;
-        border: 1px solid #FFBC48;
+     
     }
     
     .footer_left_col {
@@ -513,9 +513,7 @@
         padding-top: 10px ;
         
     }
-    .footer_right_col ul li a{
-        color: #FFBC48;
-    }
+   
     .footer_aside {
         display: block;
         flex-wrap: wrap;
