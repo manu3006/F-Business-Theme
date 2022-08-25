@@ -29,6 +29,20 @@ html {
     padding: 0px 20px;
 }
 
+:root {
+    --color-black: #1a1a1a;
+    --color-darks: #404040;
+    --color-greys: #999;
+    --color-light: #f2f2f2;
+    --color-white: #fff;
+    --color-blue-100: #3c83f6;
+    --color-blue-200: #2463eb;
+    --color-blue-300: #1d4fd7;
+    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
 h1 {
     font-family: 'Overpass';
     font-weight: 400;
@@ -106,4 +120,3 @@ a {
 ul li {
     list-style-type: none;
 }
-
