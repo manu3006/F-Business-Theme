@@ -24,50 +24,62 @@
 </head>
 
 <body>
-    <section id="main_menu_section">
+    <section class="header-section">
         <div class="content-wrapper">
-            <header class="header" id="header">
-                <nav class="navbar container">
-                    <div class="left-col">
-                        <a href="" class="brand">LOGO</a>
+             <div class="header-menubar-flex">
+                <div class="left-col">
+                    <div class="header-logo">
+                        <img src="./LOGO.png" alt="">
                     </div>
-                    <div class="burger" id="burger">
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                    </div>
-                    <span class="overlay"></span>
-                    <div class="menu" id="menu">
-                        <ul class="menu-inner">
-                                <li class="menu-item child-one"><a class="menu-link" id="active" href="#">Home</a>
-                                    <ul class="drop-down">
-                                        <li><a href="#">Sub-Menu 1</a></li>
-                                        <li><a href="#">Sub-Menu 2</a></li>
-                                        <li><a href="#">Sub-Menu 3</a></li>
-                                       
-                                    </ul>
+                </div>
+                <div class="right-col navbar">
+                    <div class="header-pages">
+                        <div class="burger" id="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </div>
+                        <span class="overlay"></span>
+                        <div class="menu" id="menu">
+                            <ul class="menu-inner">
+                                <li class="menu-link child"><a href=''>Home</a>
+                                    <ul type="none" class="dropdown active">
+                                            <li class="first-child"><a href="">Link 1</a></li>
+                                            <li class="first-child"><a href="">Link 2</a></li>
+                                            <li class="first-child"><a href="">Link 3</a></li>
+                                        </ul>
                                 </li>
-                            <li class="menu-item"><a class="menu-link" href="#">Service</a></li>
-                            <li class="menu-item"><a class="menu-link" href="#">About</a></li>
-                            <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
-                            <li class="menu-item child-one"><a class="menu-link" href="#">Features</a>
-                                <ul class="drop-down">
-                                    <li><a href="#">Sub-Menu 1</a></li>
-                                    <li><a href="#">Sub-Menu 2</a></li>
-                                    <li><a href="#">Sub-Menu 3</a></li>
-                                   
-                                </ul>
-                            </li>
-                            <li class="menu-item "><a class="menu-link" href="#">Contact</a></li>
-                            <li class="menu-item"><a class="menu-link" href="#" id="button">Get A Quote</a></li>
-                        </ul>
+                                <li class="menu-link"><a href="">Service</a></li>
+                                <li class="menu-link child"><a href="">About</a>
+                                    <ul  class="dropdown active">
+                                            <li class="first-child"><a href="">Link 1</a></li>
+                                            <li class="first-child"><a href="">Link 2</a></li>
+                                            <li class="first-child"><a href="">Link 3</a></li>
+                                        </ul>
+                                </li>
+                                <li class="menu-link"><a href="">Blog</a></li>
+                                <li class="menu-link"><a href="">Features</a></li>
+                                <li class="menu-link child"><a href="">Contact</a>
+                                    <ul class="dropdown active">
+                                            <li class="first-child"><a href="">Link 1</a></li>
+                                            <li class="first-child"><a href="">Link 2</a></li>
+                                            <li class="first-child"><a href="">Link 3</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="header-button">
+                    <div class="primary-button">
+                        <a href="">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
 
-                </nav>
-            </header>
         </div>
     </section>
-    <!-- mhedaer end -->
+    <!-- hedaer end -->
     <section class="module_one">
         <div class="content-wrapper">
             <div class="hero_banner">
@@ -794,46 +806,44 @@
 
 </script>
 <script>
-    $(document).ready(function () {
+  // TABBER STARTS
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
 
-        $('ul.tabs li').click(function () {
-            var tab_id = $(this).attr('data-tab');
+		$('ul.tabs li').removeClass('current');
+		$('.tabber-card').removeClass('current');
 
-            $('ul.tabs li').removeClass('active');
-            $('.tab-content').removeClass('active');
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
 
-            $(this).addClass('active');
-            $("#" + tab_id).addClass('active');
-        })
 
-    })
-    let drpdown = function () {
-        if ($(window).width() < 768) {
-            // jquery for dropdown
-            $(function () {
-                var list = $('.tabs');
-                var link = $('.mobile-view');
-                link.click(function (e) {
-                    e.preventDefault();
-                    list.slideToggle(200);
-                });
-                list.find('li').click(function () {
-                    var text = $(this).html();
-                    // var icon = '<i class="fa fa-sort-desc"></i>';
-                    link.html(text);
-                    link.append(icon)
-                    list.slideToggle(200);
-                });
+    $(window).on('load resize orientationchange', function() {
+        if ($(window).width() > 767) {
+         
+        }
+        else{
+          $(function() {
+            var list = $('.tabs');
+            var link = $('.mobile-view');
+            link.click(function(e) {
+              e.preventDefault();
+              list.slideDown(200);
             });
+            list.find('li').click(function() {
+              var text = $(this).html();
+              link.html(text);
+              list.slideUp(200);
+            });
+          });
+          
         }
-    }
-    $(window).resize(function () {
-        if ($(window).width() < 768) {
-            drpdown();
-            location.reload()
-        }
-    });
-    drpdown();
+      });
+
+})
+// TABBER ENDS
 </script>
 <script>
     $('.cotainer').slick({
