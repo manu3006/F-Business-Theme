@@ -229,7 +229,7 @@
                             </h4>
                         </div>
                         <ul class="tabber-contents tabs" style="display: block;">
-                            <li class="active" data-tab="tab-1">SEO Consulting</li>
+                            <li class="current" data-tab="tab-1">SEO Consulting</li>
                             <li data-tab="tab-2">Email Optimized </li>
                             <li data-tab="tab-3">Distributors</li>
                             <li data-tab="tab-4">Statistical Analysis</li>
@@ -240,7 +240,7 @@
 
                     </div>
                     <div class="tabber-right">
-                        <div id="tab-1" class="tabber-right-body tab-content active">
+                        <div id="tab-1" class="tabber-right-body tab-content current">
                             <div class="tabber-image">
                                 <img src="./Layer 1.png" alt="">
                             </div>
@@ -813,7 +813,7 @@ $(document).ready(function(){
 		var tab_id = $(this).attr('data-tab');
 
 		$('ul.tabs li').removeClass('current');
-		$('.tabber-card').removeClass('current');
+		$('.tab-content').removeClass('current');
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');

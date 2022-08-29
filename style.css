@@ -52,7 +52,7 @@
     padding: 0px 27px 0px 10px;
 }
 
-.header-section .menu-inner li.menu-link a:hover {
+.header-section .menu-inner li.menu-link:hover a {
     color: #ee9e14;
 }
 
@@ -69,10 +69,12 @@
     cursor: pointer;
     transition: 0.5s all;
     text-decoration: none;
+    border: 1px solid #ee9e14;
 }
 
 .header-section .primary-button a:hover {
-    background-color: #f3770a;
+    background-color: transparent;
+    color: #000;
 }
 
 .header-section .menu-inner .menu-link a {
@@ -181,6 +183,7 @@
     font-size: 16px;
     line-height: 28px;
     color: #BABABA;
+    outline: none;
 
 }
 
@@ -205,6 +208,11 @@
     cursor: pointer;
     display: inline-block;
     box-sizing: border-box;
+    border: 1px solid #ee9e14;
+}
+.module_one .banner_input .button:hover {
+    background: #ee9e14;
+  
 }
 
 .module_one .banner_input .button a {
@@ -477,7 +485,7 @@ width:100%;
     color: #FFFFFF;
 }
 
-.tabber-left ul .active {
+.tabber-left ul .current {
     background-color: #FFBC48;
 }
 
@@ -551,7 +559,7 @@ width:100%;
     display: none;
 }
 
-.tab-content.active {
+.tab-content.current {
     display: block;
 }
 
@@ -1331,7 +1339,8 @@ ul li button {
     margin-bottom: 23px;
     opacity: 0.5;
     outline: #000;
-    text-align: start;
+    text-align: left;
+    padding: 15px;
 }
 
 .message-flex input[type="email"] {
